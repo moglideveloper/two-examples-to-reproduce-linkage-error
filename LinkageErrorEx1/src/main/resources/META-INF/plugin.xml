@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>moglideveloper</id>
+    <name>IjPlugin</name>
+    <version>0.0.1</version>
+    <vendor email="moglideveloper@gmail.com" url="https://github.com/JetBrains/sbt-idea-plugin/discussions/107">Linkage Error</vendor>
+    <description>Example 1 to reproduce Linkage error in sample intellij plugin</description>
+    <idea-version since-build="211.5538" until-build="211.*"/>
+
+    <depends>org.intellij.scala</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectTemplatesFactory implementation="plugin.wiz_factory.AppWizardFactory" order="first"/>
+    </extensions>
+
+</idea-plugin>
